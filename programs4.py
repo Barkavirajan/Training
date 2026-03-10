@@ -64,3 +64,58 @@ def check_strength(pwd, min_length=8):
         "score": score
     }
 print(check_strength("MyPass123"))
+
+#4.
+names = [" alpha ", " beta unit ", " eAmMa MODULE "]
+clean_names = list(map(lambda x: x.strip().title(), names))
+print(clean_names)
+
+#5.
+from functools import reduce
+prices = [150, 250, 300, 120, 500]
+discounted = map(lambda x: x * 0.9, prices)
+filtered = filter(lambda x: x >= 200, discounted)
+total = reduce(lambda a, b: a + b, filtered)
+print(total)
+
+#6.
+from functools import reduce
+scores = [80, 90, 70]
+weights = [0.3, 0.5, 0.2]
+weighted_score = reduce(
+    lambda acc, pair: acc + pair[0] * pair[1],
+    zip(scores, weights),
+    0
+)
+print(weighted_score)
+
+#7.
+def count_up_to(n):
+    for i in range(1, n + 1):
+        yield i
+for num in count_up_to(5):
+    print(num)
+
+#8.
+def fib():
+    a, b = 0, 1
+    while True:
+        yield a
+        a, b = b, a + b
+f = fib()
+for _ in range(10):
+    print(next(f))
+
+#9.
+import itertools
+def multiples_of_5():
+    n = 1
+    while True:
+        yield n * 5
+        n += 1
+first_five = list(itertools.islice(multiples_of_5(), 5))
+print(first_five)
+
+#10.
+total = sum(i*i for i in range(1, 10))
+print(total)
