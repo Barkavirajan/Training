@@ -117,6 +117,6 @@ first_five = list(itertools.islice(multiples_of_5(), 5))
 print(first_five)
 
 #10.
-total = sum(i*i for i in range(1, 101))
+total = sum(i*i for i in range(1, 10))
 print(total)
 
