@@ -100,14 +100,3 @@ s = "   john    doe   "
 print(normalize_name(s))
 
 
-
-#1.Implement python functions (hash,op="sum") support colon op = "sum" -> sum of numbers op = "avg" -> average (float), op ="max" -> maximum. if no number provided return None
-#2. write make_counter(start=0) that return a function counter() which, each time it is called, increments and returns next value(1,2,3...starting from start+1).
-#3. create check_strength(pwd):str, min_length = 8 )-> dict return in colon { "Length_" colon bool,"has upper" colon boolean, "has lower" colon boolean, "has digit" colon boolean, score colon int has sum of two values} special character or anything not alpha numeric
-#4. you are give a list of products name inconsist and extra spaces colon names = [" alpha "," beta unit "," eAmMa MODULE " ] use map with lambda to strip spaces and convert to Tittle Case(example " alphacase")
-#5.create a Price Update Pipeline (map -> filter -> reduce) given n list of product, apply a 10% discount, keep only items >= dollar 200 after discount and compute the final bill total
-#6. calculate weighted score aggregation using reduce when given list of scores and weights    
-#7. write a generator function count_up_to(n) that yields numbers from 1 to n.      
-#8. write a generator function fib() that yields fib numbers
-#9. use itertools.islice() to make the first 5 elements if generator multiples of 5
-#10. use a generator  expression compute and sum of squares of number from 1 to 100
