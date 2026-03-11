@@ -118,4 +118,9 @@ print(first_five)
 
 #10.
 total = sum(i*i for i in range(1, 10))
+<<<<<<< HEAD
 print(total)
+=======
+print(total)
+
+>>>>>>> 0c7c1986b845b569efc681eed2e0239f7de43cac
